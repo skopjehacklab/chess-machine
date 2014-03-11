@@ -9,7 +9,7 @@ Arm.move('e2', 'e4'); // blocks and returns when move is completed
 and does the actual moves on the board. It can be configured like this:
 
 ```javascript
-Hand.configure({
+Arm.configure({
     board_lower_left: (3.26, 3.20),
     board_upper_right: (36.4, 37),
     board_height: 1.1,
@@ -26,11 +26,11 @@ Hand.configure({
 It can move pieces to the graveyard:
 
 ```javascript
-Hand.move('e4', null) // Removes a piece off the board
+Arm.move('e4', null) // Removes a piece off the board
 ```
 
 or from/to "memorized" positions:
 
 ```javascript
-Hand.move('m', 'c8')  // Promotion from "memory" square
+Arm.move('m', 'c8')  // Promotion from "memory" square
 ```
